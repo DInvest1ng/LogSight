@@ -1,4 +1,5 @@
-# main.py
+# scripts/logsight.py
+
 
 import os
 import sys
