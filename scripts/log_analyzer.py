@@ -1,4 +1,4 @@
-#scripts/log_analyzer.py
+# scripts/log_analyzer.py
 
 import os
 import sys
