@@ -26,7 +26,7 @@ class CompletionOptions:
     top_p: float = 0.95
 
 
-class YandexGPTClient:
+class LLMClient:
     """
     Клиент для взаимодействия с YandexGPT API
     """

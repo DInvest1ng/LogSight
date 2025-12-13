@@ -2,14 +2,14 @@
 
 
 from .yandex_gpt_client import (
-    YandexGPTClient,
+    LLMClient,
     Message,
     CompletionOptions,
 )
 
 
 __all__ = [
-    "YandexGPTClient",
+    "LLMClient",
     "Message",
     "CompletionOptions",
 ]
