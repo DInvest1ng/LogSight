@@ -125,10 +125,10 @@ async def main():
 
     load_dotenv()
 
-    async with YandexGPTClient() as client:
+    async with LLMClient() as client:
         messages = [
-            Message(role="system", text="Ты - полезный ассистент"),
-            Message(role="user", text="Привет! Расскажи коротко о себе"),
+            Message(role="system", text="Ты - полезный ассистент программист"),
+            Message(role="user", text=input()),
         ]
 
         options = CompletionOptions(max_tokens=300, temperature=0.6)

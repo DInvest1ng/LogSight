@@ -1,19 +1,25 @@
-aiohappyeyeballs==2.6.1
-aiohttp==3.13.2
-aiosignal==1.4.0
-attrs==25.4.0
-black==25.12.0
-click==8.3.1
-frozenlist==1.8.0
-idna==3.11
-multidict==6.7.0
-mypy_extensions==1.1.0
-packaging==25.0
-pathspec==0.12.1
-platformdirs==4.5.1
-propcache==0.4.1
-python-dotenv==1.2.1
-pytokens==0.3.0
-PyYAML==6.0.3
-yamal==8.0.26
-yarl==1.22.0
+# Core runtime
+numpy>=1.26,<3
+pandas>=2.2,<3
+scipy>=1.11,<2
+tqdm>=4.66,<5
+
+# ML
+# For GPU, install a CUDA-enabled torch build matching your server CUDA.
+# Example (CUDA 12.4):
+# pip install --index-url https://download.pytorch.org/whl/cu124 torch torchvision torchaudio
+torch>=2.2,<3
+scikit-learn>=1.4,<2
+
+# Visualization
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+
+# API / configs
+aiohttp>=3.9,<4
+python-dotenv>=1.0,<2
+PyYAML>=6.0,<7
+
+# Notebook environment
+jupyterlab>=4.2,<5
+ipykernel>=6.29,<7

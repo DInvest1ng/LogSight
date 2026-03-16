@@ -1,131 +1,87 @@
-### LogSight — Анализ логов с помощью LLM
+# LogSight
 
-**LogSight** — это инструмент командной строки, разработанный для автоматического анализа текстовых лог-файлов с использованием возможностей больших языковых моделей (LLM) через API **YandexGPT**. Проект предоставляет простой способ интерпретировать содержимое логов, выявлять ошибки, аномалии и получать краткий отчёт на естественном языке.
+Компактный репозиторий для 3 рабочих направлений:
 
+1. `clients` — клиент и анализ логов через YandexGPT
+2. `training` — код дообучения/инференса LogBERT
+3. `parsing` — подготовка и нормализация логов для обучения
 
-### 📋 Функциональность
+## Структура
 
-- **Анализ лог-файлов:** Загрузка и передача содержимого файла лога в LLM для анализа.
-- **Гибкая настройка промптов:** Пользовательские системные промпты и параметры генерации задаются через конфигурационный файл в формате YAML.
-- **Асинхронное API:** Эффективное взаимодействие с API YandexGPT с использованием асинхронных вызовов.
-- **JSON-вывод:** Результаты анализа форматируются и выводятся в структурированном виде (JSON).
-
----
-
-### 🔧 Требования
-
-- **Python:** 3.9 или выше
-- **Менеджер пакетов:** `pip`
-- **Yandex Cloud:** Аккаунт с активированным доступом к API YandexGPT и необходимыми ключами.
-
----
-
-## ⚙️ Установка и настройка
-
-### 1. Клонирование репозитория
-
-```bash
-git clone https://github.com/DInvest1ng/LogSight
-cd logsight
+```text
+LogSight/
+├── clients/
+│   ├── yandex_gpt_client.py
+│   └── log_analyzer.py
+├── training/
+│   ├── bert_pytorch/              # ядро модели и train/predict логика
+│   ├── inference/                 # production-style предиктор
+│   └── logbert_inference_client.py
+├── parsing/
+│   ├── drain.py                   # Drain parser
+│   └── dataset/                   # пайплайны подготовки датасета
+├── scripts/
+│   ├── logsight.py                # CLI для YandexGPT анализа
+│   ├── prepare_dataset.py         # подготовка structured csv
+│   └── merge_datasets.py          # merge DVWA + Vulhab
+├── configs/
+│   └── log_analysis_prompt.yaml
+├── notebooks/
+│   └── finetune_logbert_web_lora.ipynb
+├── logs/
+├── output/
+├── weights/
+└── main.py                        # entrypoint инференса LogBERT
 ```
 
-### 2. Установка зависимостей
-
-Убедитесь, что вы находитесь в директории проекта, и выполните:
+## Установка
 
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Настройка переменных окружения
-
-Создайте файл `.env` в корневой директории проекта (`logsight/.env`) и укажите следующие переменные:
-
-```env
-YANDEX_CLOUD_API_KEY=ваш_ключ_api_yandex_cloud
-YANDEX_CLOUD_FOLDER_ID=ваш_id_каталога_yandex_cloud
-```
-
-> **Примечание:**
-> - Ключ API можно получить в [консоли управления Yandex Cloud](https://cloud.yandex.ru/).
-> - ID каталога (folder ID) также можно найти в настройках вашего облака в консоли.
-
-### 4. Настройка промпта и параметров генерации
-
-Откройте файл `config/log_analysis_prompt.yaml`. Здесь вы можете настроить:
-
-- `system_prompt`: Инструкции, которые будут даны модели (например, роль эксперта по логам, язык вывода, формат).
-- `generation_params`: Параметры генерации, такие как `temperature`, `max_tokens`.
-
-Пример содержимого файла:
-
-```yaml
-system_prompt: |
-  Ты — опытный DevOps-инженер и эксперт по безопасности. Проанализируй предоставленный лог.
-  - Выдели все сообщения об ошибках (ERROR), предупреждениях (WARNING).
-  - Укажи возможные аномалии, подозрительную активность (например, множественные отказы авторизации).
-  - Предложи краткие рекомендации по устранению найденных проблем.
-  Ответ должен быть на русском языке, структурирован и информативен.
-generation_params:
-  temperature: 0.3
-  max_tokens: 1500
-```
-
----
-
-## ▶️ Использование
-
-Для запуска анализа лог-файла используйте команду:
+Для GPU-сервера установите CUDA-сборку PyTorch под вашу версию CUDA (пример для CUDA 12.4):
 
 ```bash
-python scripts/logsight.py -f path/to/your/logfile.log
+pip install --index-url https://download.pytorch.org/whl/cu124 torch torchvision torchaudio
 ```
 
-> **Опционально:** Для получения справки по флагам используйте `--help`:
-> ```bash
-> python scripts/logsight.py --help
-> ```
+## Запуск
 
-Пример вывода:
+### 1) YandexGPT client
 
-```json
-{
-  "summary": "Лог содержит 3 критические ошибки, 2 предупреждения.",
-  "errors_found": [
-    {
-      "timestamp": "2023-10-05T10:00:00Z",
-      "message": "Connection refused to database"
-    }
-  ],
-  "recommendations": [
-    "Проверьте статус службы базы данных.",
-    "Убедитесь в правильности настроек подключения."
-  ]
-}
+```bash
+python scripts/logsight.py -f logs/your_log_file.log
+# опционально: -c configs/log_analysis_prompt.yaml
 ```
 
----
+Нужны переменные окружения:
 
-## 📁 Структура проекта
+- `YANDEX_CLOUD_API_KEY`
+- `YANDEX_CLOUD_FOLDER`
 
-```
-logsight/
-├── scripts/
-│   ├── logsight.py        # Точка входа CLI
-│   └── log_analyzer.py    # Основная логика анализа
-├── clients/
-│   └── yandex_gpt_client.py  # Клиент для взаимодействия с YandexGPT
-├── config/
-│   └── log_analysis_prompt.yaml  # Конфигурация промпта
-├── .env                   # Файл переменных окружения (в .gitignore)
-├── requirements.txt       # Зависимости Python
-└── README.md             # Этот файл
+### 2) Парсинг логов
+
+```bash
+python scripts/prepare_dataset.py --target vulhab --logs-dir logs --output-dir output
+python scripts/prepare_dataset.py --target dvwa --logs-dir logs --output-dir output
+python scripts/merge_datasets.py --output-dir output/dvwa_vulhab
 ```
 
---- 
+### 3) Инференс / дообученная модель
 
-## 🤝 Вклад в проект
+```bash
+python main.py --logs logs/vulhub_labeled_interleaved.jsonl --state weights/best_bert.pth --vocab weights/vocab.pkl
+```
 
-Если вы хотите внести улучшения, пожалуйста, создайте Fork репозитория, внесите изменения и отправьте Pull Request. Любые идеи и баг-репорты приветствуются!
+Ноутбук с LoRA-дообучением:
 
----
+- `notebooks/finetune_logbert_web_lora.ipynb`
+
+Запускать Jupyter лучше из корня репозитория:
+
+```bash
+jupyter lab
+```

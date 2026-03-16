@@ -1,14 +1,10 @@
-# scripts/logsight.py
-
-
+import argparse
+import asyncio
 import os
 import sys
-import argparse
-from pathlib import Path
-from typing import Optional
 
 
-def setup_project_path():
+def setup_project_path() -> None:
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
     sys.path.insert(0, project_root)
@@ -16,12 +12,11 @@ def setup_project_path():
 
 setup_project_path()
 
-import asyncio
-from scripts.log_analyzer import log_responce
+from clients.log_analyzer import log_response
 
 
-async def main():
-    parser = argparse.ArgumentParser(description="Log analyzer using LLM")
+async def main() -> None:
+    parser = argparse.ArgumentParser(description="Analyze logs with YandexGPT")
     parser.add_argument(
         "-f",
         "--file",
@@ -29,9 +24,16 @@ async def main():
         required=True,
         help="Path to the log file for analysis",
     )
+    parser.add_argument(
+        "-c",
+        "--config",
+        type=str,
+        default=None,
+        help="Optional path to YAML prompt config (default: configs/log_analysis_prompt.yaml)",
+    )
     args = parser.parse_args()
 
-    result = await log_responce(args.file)
+    result = await log_response(args.file, config_file=args.config)
     print(result)
 
 

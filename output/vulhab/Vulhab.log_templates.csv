@@ -1,0 +1,72 @@
+EventId,EventTemplate,Occurrences
+b16d8f5e,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",13683
+21bcfe1c,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",6195
+00b24078,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (X11; Linux x86_64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",3126
+1907e8b2,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64; rv:<*>.<*>) Gecko/<*> Firefox/<*>.<*>""",2694
+28c41cab,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Linux; Android <*>; K) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Mobile Safari/<*>.<*>""",2573
+387254e7,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Safari/<*>.<*>.<*>""",2243
+4c9cca04,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*> Edg/<*>""",2194
+73063e5b,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (X11; Ubuntu; Linux x86_64; rv:<*>.<*>) Gecko/<*> Firefox/<*>.<*>""",1421
+1b85f758,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (X11; Linux x86_64; rv:<*>.<*>) Gecko/<*> Firefox/<*>.<*>""",1381
+517235b7,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",1353
+236424c7,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X <*>.<*>; rv:<*>.<*>) Gecko/<*> Firefox/<*>.<*>""",1297
+25228352,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*>.<*>.<*>.<*> Safari/<*>.<*>""",1264
+c8a31c5c,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) obsidian/<*>.<*>.<*> Chrome/<*>.<*>.<*>.<*> Electron/<*>.<*>.<*> Safari/<*>.<*>""",913
+25d1a76b,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*> OPR/<*>""",898
+359296df,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Mobile/15E148 Safari/<*>.<*>""",890
+7f8b9325,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) tikplays/<*>.<*>.<*> Chrome/<*>.<*>.<*>.<*> Electron/<*>.<*>.<*> Safari/<*>.<*>""",853
+bc13c45a,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",619
+606f28fa,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) CriOS/<*>.<*>.<*>.<*> Mobile/15E148 Safari/<*>.<*>""",477
+254ca585,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Mobile/15E148 Safari/<*>.<*>""",468
+a5a9196a,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Mobile/15E148 Safari/<*>.<*>""",463
+03a6dd0f,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Linux; Android <*>; K) AppleWebKit/<*>.<*> (KHTML, like Gecko) SamsungBrowser/<*>.<*> Chrome/<*> Mobile Safari/<*>.<*>""",456
+7ea1a4e9,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*>""",451
+c9054b6c,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*> OPR/<*>""",451
+283e2460,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*> Edg/<*>""",445
+51e32314,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Mobile/15E148""",443
+aacb8300,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (X11; CrOS x86_64 <*>.<*>.<*>) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",441
+8a049f52,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*>""",439
+db92dab8,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*>.<*>.<*>.<*> CitizenFX/<*>.<*>.<*>.<*> Safari/<*>.<*>""",439
+9f356309,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Linux; Android <*>; K) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",437
+b341548e,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 26_3 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Mobile/15E148 Safari/<*>.<*> musical_ly_43.<*>.<*> BytedanceWebview/d8a21c6""",437
+af852f60,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Mobile/15E148 Safari/<*>.<*> musical_ly_43.<*>.<*> BytedanceWebview/d8a21c6""",432
+3677277a,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 26_2_1 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) CriOS/<*>.<*>.<*>.<*> Mobile/15E148 Safari/<*>.<*>""",430
+62ba70f3,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) stucco5000/<*>.<*>.<*> Chrome/<*>.<*>.<*>.<*> Electron/<*>.<*>.<*> Safari/<*>.<*>""",427
+25559df0,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (X11; Linux x86_64) Gecko/<*> Firefox/<*>.<*>""",425
+a26835d2,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*>.<*> Safari/<*>.<*>.<*>""",418
+b4bd86bf,"""GET <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Linux; Android <*>; Redmi Note <*> Pro Build/QKQ1.<*>.<*>; wv) AppleWebKit/<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Chrome/<*>.<*>.<*>.<*> Mobile Safari/<*>.<*> Phantom/android/<*>.<*>.<*>.<*>""",395
+9e6ccf21,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (X11; Linux x86_64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",313
+84dd8756,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64; rv:<*>.<*>) Gecko/<*> Firefox/<*>.<*>""",258
+ea70788f,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Linux; Android <*>; K) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Mobile Safari/<*>.<*>""",257
+a85320d9,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*> Edg/<*>""",232
+78cba6d7,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Safari/<*>.<*>.<*>""",224
+c5110ddb,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*>.<*>.<*>.<*> Safari/<*>.<*>""",152
+c46722b0,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (X11; Linux x86_64; rv:<*>.<*>) Gecko/<*> Firefox/<*>.<*>""",145
+6a64d259,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X <*>.<*>; rv:<*>.<*>) Gecko/<*> Firefox/<*>.<*>""",121
+d9b8d3f4,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (X11; Ubuntu; Linux x86_64; rv:<*>.<*>) Gecko/<*> Firefox/<*>.<*>""",115
+2f96c59f,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*> OPR/<*>""",86
+da50a842,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Mobile/15E148 Safari/<*>.<*>""",84
+ac200834,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) obsidian/<*>.<*>.<*> Chrome/<*>.<*>.<*>.<*> Electron/<*>.<*>.<*> Safari/<*>.<*>""",83
+f0b23ff6,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) tikplays/<*>.<*>.<*> Chrome/<*>.<*>.<*>.<*> Electron/<*>.<*>.<*> Safari/<*>.<*>""",74
+3c0bf681,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Mobile/15E148 Safari/<*>.<*>""",57
+0bee03a9,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*> Edg/<*>""",50
+e9149b98,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Mobile/15E148 Safari/<*>.<*>""",50
+949be8fb,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*>""",49
+e8dc7ee6,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Version/<*>.<*>.<*> Safari/<*>.<*>.<*>""",47
+ffffb290,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""python-requests/<*>.<*>.<*>""",46
+190eaa66,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Linux; Android <*>; Redmi Note <*> Pro Build/QKQ1.<*>.<*>; wv) AppleWebKit/<*>.<*> (KHTML, like Gecko) Version/<*>.<*> Chrome/<*>.<*>.<*>.<*> Mobile Safari/<*>.<*> Phantom/android/<*>.<*>.<*>.<*>""",45
+76cfccac,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""curl/<*>.<*>.<*>""",45
+89bd5869,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Mobile/15E148 Safari/<*>.<*> musical_ly_43.<*>.<*> BytedanceWebview/d8a21c6""",44
+0c483f98,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""sqlmap/<*>.<*>.<*>#stable""",41
+7f45b841,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*> OPR/<*>""",41
+8b3440fc,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (X11; CrOS x86_64 <*>.<*>.<*>) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",41
+449e43ad,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Linux; Android <*>; K) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*> Safari/<*>.<*>""",39
+a0ba2a5c,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 26_3 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Mobile/15E148 Safari/<*>.<*> musical_ly_43.<*>.<*> BytedanceWebview/d8a21c6""",39
+826eb0bc,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) Chrome/<*>.<*>.<*>.<*> CitizenFX/<*>.<*>.<*>.<*> Safari/<*>.<*>""",38
+dbf495b5,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 26_2_1 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) CriOS/<*>.<*>.<*>.<*> Mobile/15E148 Safari/<*>.<*>""",38
+def284ad,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Linux; Android <*>; K) AppleWebKit/<*>.<*> (KHTML, like Gecko) SamsungBrowser/<*>.<*> Chrome/<*> Mobile Safari/<*>.<*>""",38
+76f72095,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*> (KHTML, like Gecko) stucco5000/<*>.<*>.<*> Chrome/<*>.<*>.<*>.<*> Electron/<*>.<*>.<*> Safari/<*>.<*>""",35
+c5fc6c99,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 26_3_1 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) CriOS/<*>.<*>.<*>.<*> Mobile/15E148 Safari/<*>.<*>""",35
+93864753,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (Windows NT <*>.<*>; Win64; x64) AppleWebKit/<*>.<*>""",33
+93afb10b,"""POST <*> HTTP/<*>"" <*> ""<*>"" ""Mozilla/<*>.<*> (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/<*>.<*>.<*> (KHTML, like Gecko) Mobile/15E148""",32
+79dc426a,"""GET <*> HTTP/<*>"" <*> ""-"" ""python-requests/<*>.<*>.<*>""",2
